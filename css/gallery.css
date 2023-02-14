@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.back{
+    background-color: #887c6d;
+}
+.title h2{
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 63px;
+    margin: auto;
+    text-align: center;
+}
+/* footer */
+#footer{
+    background-color: #332e29;
+    color: #fff;
+}
+.footer-content{
+    text-align: center;
+}
+.footer-content h3{
+    color: #fff;
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+}
+.footer-content ul{
+    flex-direction: column;
+}
+.footer-content ul li a{
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 300ms ease-in-out;
+}
+.footer-content ul li a:hover{
+    opacity: 0.7;
+}
+.footer-content ul li{
+    margin: .5rem 1rem;
+}
+.footer-content > div:first-child{
+    margin-bottom: 3rem;
+}
+.footer-content > div:first-child div{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin-top: -100px;
+    clear: both;
+    border-radius: 50%;
+}
+.made{
+    text-align: center;
+}
+.made div{
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+
+/* section three */
+.section-three{
+    margin: 40px 0;
+}
+.single-img{
+    position: relative;
+    margin: 10px;
+}
+.single-img-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 5px 30px;
+    background: rgba(0, 0, 0, 0.7);
+}
+.single-img-content h3{
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+img{
+    width: 100%;
+    display: block;
+}
+
+@media screen and (min-width: 800px){
+    /* section three */
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+@media screen and (min-width: 1200px){
+    /* section three */
+    .gallery{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+@media(min-width: 576px){
+    .footer-content ul{
+        flex-direction: row;
+    }
+}
